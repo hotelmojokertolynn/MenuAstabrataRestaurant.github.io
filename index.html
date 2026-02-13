@@ -3,11 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Mencegah iPhone auto-detect nomor telepon -->
+<meta name="format-detection" content="telephone=no">
+
 <title>Order Menu - Astabrata Restaurant</title>
 
 <link rel="stylesheet" href="assets/css/style.css">
 
 <style>
+
+/* LINK TELEPON AGAR TIDAK BIRU DI iOS */
+.contact-link{
+color:inherit !important;
+text-decoration:none !important;
+}
+
+a[href^="tel"],
+a[x-apple-data-detectors]{
+color:inherit !important;
+text-decoration:none !important;
+}
 
 /* INPUT */
 input,.form-control,select{
@@ -118,7 +134,13 @@ border-bottom:1.5px solid #000;
 
 <div class="hotel-info">
 <p>Jl. Empunala No.87 Mojokerto, Jawa Timur 61314 - Indonesia</p>
-<p>Phone : (0321) 5285-000 / WA : (0812) 3146-3186</p>
+<p>
+Phone :
+<a href="tel:+623215285000" class="contact-link">(0321) 5285-000</a>
+/
+WA :
+<a href="tel:+6281231463186" class="contact-link">(0812) 3146-3186</a>
+</p>
 <p>Email : mojokerto@lynnhotelsandresorts.com</p>
 </div>
 
@@ -151,7 +173,6 @@ border-bottom:1.5px solid #000;
 </select>
 </div>
 
-<!-- NOMOR KAMAR MANUAL -->
 <div class="field">
 <label>Nomor Kamar</label>
 <input type="text" id="nomor_kamar" placeholder="Contoh: 305 (Opsional)">

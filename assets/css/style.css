@@ -364,21 +364,35 @@ body > *{
 
 /* ================= RESPONSIVE ================= */
 @media(max-width:768px){
-body{background-attachment:scroll;}
+  body{background-attachment:scroll;}
 }
 
 @media(max-width:600px){
-.banner-text h2{font-size:22px;}
-.menu-grid{grid-template-columns:repeat(2,1fr);}
-.header-info{flex-direction:column;}
+  .banner-text h2{font-size:22px;}
+  .menu-grid{grid-template-columns:repeat(2,1fr);}
+  .header-info{flex-direction:column;}
 }
 
 @media(max-width:480px){
-.price-info p{
-font-size:13px;
-border-bottom:1.5px solid #f1e2c6;
+  .price-info p{
+    font-size:13px;
+    border-bottom:1.5px solid #f1e2c6;
+  }
+  .hotel-info{
+    font-size:11px;
+  }
 }
-.hotel-info{
-font-size:11px;
+
+/* ================= FIX IPHONE AUTO LINK ================= */
+a[href^="tel"],
+a[href^="mailto"],
+a[x-apple-data-detectors]{
+  color:inherit !important;
+  text-decoration:none !important;
+  font-weight:inherit !important;
 }
+
+.contact-link{
+  color:inherit !important;
+  text-decoration:none !important;
 }
