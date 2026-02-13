@@ -212,7 +212,7 @@ msg+=
 `*Rp ${total.toLocaleString('id-ID')}*%0A%0A`+
 `*🙏 Mohon segera diproses*`;
 
-window.open('https://wa.me/6285974511215?text='+msg,'_blank');
+window.open('https://wa.me/62831463186?text='+msg,'_blank');
 
 });
 
