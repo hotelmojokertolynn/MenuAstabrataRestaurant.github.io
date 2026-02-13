@@ -1,0 +1,384 @@
+/* ================= RESET ================= */
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html,body{
+  scroll-behavior:smooth;
+  -webkit-overflow-scrolling:touch;
+  min-height:100%;
+  overflow-x:hidden;
+}
+
+/* ================= BODY GOLD HOTEL BG HD ================= */
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:#222;
+  padding-bottom:120px;
+  position:relative;
+  background-image:url("../images/bg-lynn-hd.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+/* OVERLAY */
+body::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(156,115,51,0.78);
+  z-index:0;
+  pointer-events:none;
+}
+
+body > *{
+  position:relative;
+  z-index:1;
+}
+
+/* ================= HEADER HOTEL ================= */
+.top-header{
+  background:linear-gradient(90deg,#d6a84a,#9c7333);
+  color:#fff;
+}
+
+.header-title{
+  text-align:center;
+  padding:14px;
+  font-size:22px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.header-info{
+  background:#fff;
+  color:#333;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  padding:12px;
+  flex-wrap:wrap;
+}
+
+.header-info img{
+  height:60px;
+}
+
+.contact{
+  font-size:12px;
+  text-align:center;
+}
+
+/* ================= WELCOME BANNER ================= */
+.welcome-banner{
+  position:relative;
+  min-height:300px;
+  padding:110px 20px 70px;
+  background:url("../images/banner.jpg") center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  text-align:center;
+  color:#fff;
+  border-bottom-left-radius:30px;
+  border-bottom-right-radius:30px;
+}
+
+.welcome-banner .overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+}
+
+.banner-text{
+  position:relative;
+  z-index:2;
+  max-width:750px;
+}
+
+.banner-text h2{
+  font-size:28px;
+  margin-bottom:12px;
+  letter-spacing:2px;
+}
+
+.banner-text p{
+  font-size:15px;
+  margin-bottom:6px;
+}
+
+.banner-text span{
+  font-size:12px;
+  opacity:0.9;
+}
+
+/* ================= HOTEL INFO PREMIUM BOX ================= */
+.hotel-info{
+  margin-top:28px;
+  display:inline-block;
+  background:rgba(0,0,0,0.45);
+  padding:18px 24px;
+  border-radius:14px;
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  box-shadow:0 6px 18px rgba(0,0,0,0.35);
+  border-left:4px solid #d4af37;
+  font-size:13px;
+  line-height:1.8;
+  text-align:left;
+  max-width:520px;
+}
+
+.hotel-info p{
+  margin:6px 0;
+  padding-left:20px;
+  position:relative;
+}
+
+.hotel-info p:nth-child(1)::before{
+  content:"📍";
+  position:absolute;
+  left:0;
+}
+
+.hotel-info p:nth-child(2)::before{
+  content:"☎";
+  position:absolute;
+  left:0;
+}
+
+.hotel-info p:nth-child(3)::before{
+  content:"✉";
+  position:absolute;
+  left:0;
+}
+
+/* ================= CONTAINER ================= */
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+}
+
+/* ================= MENU HEADER ================= */
+.menu-header{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.menu-header h1{
+  letter-spacing:6px;
+  font-size:28px;
+  color:#fff;
+}
+
+.menu-header p{
+  font-size:13px;
+  color:#f5f5f5;
+  margin-top:8px;
+}
+
+/* ================= PRICE INFO ================= */
+.price-info{
+  text-align:center;
+  margin:25px auto 35px;
+  padding:0 15px;
+  max-width:900px;
+}
+
+.price-info p{
+  font-size:15px;
+  line-height:1.6;
+  padding-bottom:12px;
+  border-bottom:2px solid #f1e2c6;
+  color:#fff;
+}
+
+/* ================= FILTER ================= */
+.menu-filter{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-top:18px;
+  flex-wrap:wrap;
+}
+
+.menu-filter button{
+  border:none;
+  padding:8px 16px;
+  border-radius:20px;
+  background:#ffffffcc;
+  cursor:pointer;
+  font-size:12px;
+  transition:0.2s;
+}
+
+.menu-filter button.active{
+  background:#fff;
+  color:#9c7333;
+  font-weight:bold;
+}
+
+/* ================= CATEGORY ================= */
+.category{
+  margin-top:40px;
+}
+
+.category h2{
+  font-size:18px;
+  margin-bottom:10px;
+  color:#fff;
+}
+
+/* ================= GRID ================= */
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+}
+
+/* ================= CARD ================= */
+.menu-card{
+  background:#fff;
+  border-radius:16px;
+  padding:12px;
+  box-shadow:0 6px 14px rgba(0,0,0,0.08);
+  position:relative;
+  transition:0.2s;
+}
+
+.menu-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 18px rgba(0,0,0,0.12);
+}
+
+.menu-label{
+  position:absolute;
+  top:10px;
+  left:10px;
+  background:#9c7333;
+  color:#fff;
+  font-size:10px;
+  padding:4px 8px;
+  border-radius:12px;
+}
+
+.menu-card img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+.menu-info{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:13px;
+  margin-bottom:10px;
+}
+
+.menu-info b{
+  color:#9c7333;
+}
+
+/* ================= BUTTON ================= */
+.add-btn{
+  width:100%;
+  border:1.5px solid #9c7333;
+  color:#9c7333;
+  background:#fff;
+  padding:8px;
+  border-radius:20px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.add-btn:hover{
+  background:#9c7333;
+  color:#fff;
+}
+
+/* ================= QTY ================= */
+.qty-control{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  border:1.5px solid #9c7333;
+  border-radius:20px;
+  padding:4px 10px;
+  height:34px;
+  background:#f7f1e6;
+  font-weight:bold;
+}
+
+.qty-control button{
+  border:none;
+  background:#9c7333;
+  color:#fff;
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  cursor:pointer;
+}
+
+/* ================= CART ================= */
+.cart{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#ffffff;
+  border-top:1px solid #ddd;
+  padding:14px;
+  box-shadow:0 -4px 12px rgba(0,0,0,0.08);
+}
+
+.cart-content{
+  max-width:900px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-weight:bold;
+}
+
+.wa-btn{
+  background:#25D366;
+  color:#fff;
+  padding:12px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+body{background-attachment:scroll;}
+}
+
+@media(max-width:600px){
+.banner-text h2{font-size:22px;}
+.menu-grid{grid-template-columns:repeat(2,1fr);}
+.header-info{flex-direction:column;}
+}
+
+@media(max-width:480px){
+.price-info p{
+font-size:13px;
+border-bottom:1.5px solid #f1e2c6;
+}
+.hotel-info{
+font-size:11px;
+}
+}
