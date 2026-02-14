@@ -124,6 +124,14 @@ const menuData = [
       { name: "Summer Strawberry Ly", price: 27000, image: "assets/images_menu/Summer Strawberry Ly.png" }
     ]
   },
+
+  {
+    category: "MINERAL",
+    items: [
+      { name: "Mineral Water Ice/No", price: 10000, image: "assets/images_menu/Mineral Water IceNo.png" }
+    ]
+  },
+
   {
     category: "MILKSHAKE",
     items: [
