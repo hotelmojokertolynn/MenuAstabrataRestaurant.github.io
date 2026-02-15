@@ -22,7 +22,7 @@ const menuData = [
       { name: "Sapo Tofu Seafood", price: 55000, image: "assets/images_menu/SAPO TAHU.jpeg" },
       { name: "Beef Blackpepper", price: 60000, image: "assets/images_menu/BEEF BLACKPEPERPR.jpeg" },
       { name: "Kwetiauw Goreng Seafood", price: 55000, image: "assets/images_menu/KEWETIAUW.jpeg" },
-      { name: "Udang Sauce Telur Asin", price: 65000, image: "assets/images_menu/Udang Sauce Telur Asin.png" },
+      { name: "Udang Sauce Telur Asin", price: 65000, image: "assets/images_menu/udang saus telur asin.jpeg" },
       { name: "Ayam Sauce Kungpao", price: 55000, image: "assets/images_menu/Ayam Sauce Kungpao.png" }
     ]
   },
