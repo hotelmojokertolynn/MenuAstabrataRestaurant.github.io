@@ -3,7 +3,7 @@ const menuData = [
     category: "APPETIZER",
     items: [
       { name: "Rujak Manis Surabaya", price: 30000, image: "assets/images_menu/Rujak Manis Surabaya.png" },
-      { name: "Crispy Fruit Salad", price: 30000, image: "assets/images_menu/Crispy Fruit Salad.png" },
+      { name: "Crispy Fruit Salad", price: 30000, image: "assets/images_menu/CRISPY FRUIT SALAD.jpeg" },
       { name: "Gado Gado", price: 35000, image: "assets/images_menu/Gado Gado.png" }
     ]
   },
@@ -18,10 +18,10 @@ const menuData = [
   {
     category: "ASIAN",
     items: [
-      { name: "Capjay Ayam", price: 55000, image: "assets/images_menu/Capjay Ayam.png" },
-      { name: "Sapo Tofu Seafood", price: 55000, image: "assets/images_menu/Sapo Tofu Seafood.png" },
-      { name: "Beef Blackpepper", price: 60000, image: "assets/images_menu/Beef Blackpepper.png" },
-      { name: "Kwetiauw Goreng Seafood", price: 55000, image: "assets/images_menu/Kwetiauw Goreng Seafood.png" },
+      { name: "Capjay Ayam", price: 55000, image: "assets/images_menu/CAPJAY AYAM.jpeg" },
+      { name: "Sapo Tofu Seafood", price: 55000, image: "assets/images_menu/SAPO TAHU.jpeg" },
+      { name: "Beef Blackpepper", price: 60000, image: "assets/images_menu/BEEF BLACKPEPERPR.jpeg" },
+      { name: "Kwetiauw Goreng Seafood", price: 55000, image: "assets/images_menu/KEWETIAUW.jpeg" },
       { name: "Udang Sauce Telur Asin", price: 65000, image: "assets/images_menu/Udang Sauce Telur Asin.png" },
       { name: "Ayam Sauce Kungpao", price: 55000, image: "assets/images_menu/Ayam Sauce Kungpao.png" }
     ]
@@ -40,18 +40,18 @@ const menuData = [
     category: "INDONESIAN",
     items: [
       { name: "Rawon Iga", price: 75000, image: "assets/images_menu/Rawon Iga.png" },
-      { name: "Sup Iga Bakar", price: 75000, image: "assets/images_menu/Sup Iga Bakar.png" },
+      { name: "Sup Iga Bakar", price: 75000, image: "assets/images_menu/IGA BAKAR.jpeg" },
       { name: "Sup Buntut", price: 75000, image: "assets/images_menu/Sup Buntut.png" },
       { name: "Soto Ayam Lamongan", price: 45000, image: "assets/images_menu/Soto Ayam Lamongan.png" },
-      { name: "Tahu Telur", price: 35000, image: "assets/images_menu/Tahu Telur.png" },
-      { name: "Nasi Goreng Empunala", price: 55000, image: "assets/images_menu/Nasi Goreng Empunala.png" },
+      { name: "Tahu Telur", price: 35000, image: "assets/images_menu/TAHU CAMPUR KALI YE.jpeg" },
+      { name: "Nasi Goreng Empunala", price: 55000, image: "assets/images_menu/NASGOR EMPUNALA.jpeg" },
       { name: "Nasi Goreng Kampung", price: 50000, image: "assets/images_menu/Nasi Goreng Kampung.png" },
       { name: "Nasi Goreng Bumbu Rawon w/ Empal Serundeng", price: 55000, image: "assets/images_menu/Nasi Goreng Bumbu Rawon w Empal Serundeng.png" },
       { name: "Nasi Goreng Oriental w/ Chicken Katsu", price: 50000, image: "assets/images_menu/Nasi Goreng Oriental w Chicken Katsu.png" },
-      { name: "Ayam Penyet Majapahit", price: 60000, image: "assets/images_menu/Ayam Penyet Majapahit.png" },
+      { name: "Ayam Penyet Majapahit", price: 60000, image: "assets/images_menu/ayam penyet maja.jpeg" },
       { name: "Bebek Goreng Majapahit", price: 65000, image: "assets/images_menu/Bebek Goreng Majapahit.png" },
       { name: "Bebek Goreng Bumbu Hitam Madura", price: 65000, image: "assets/images_menu/Bebek Goreng Bumbu Hitam Madura.png" },
-      { name: "Nasi Timbel", price: 55000, image: "assets/images_menu/Nasi Timbel.png" },
+      { name: "Nasi Timbel", price: 55000, image: "assets/images_menu/NASI TIMBEL.jpeg" },
       { name: "Mie Godog Jawa", price: 45000, image: "assets/images_menu/Mie Godog Jawa.png" },
       { name: "Mie Goreng Jawa", price: 50000, image: "assets/images_menu/Mie Goreng Jawa.png" },
       { name: "Nasi Ulam Jimbaran", price: 70000, image: "assets/images_menu/Nasi Ulam Jimbaran.png" }
@@ -63,13 +63,13 @@ const menuData = [
       { name: "Cheese Beef Risol Mayo", price: 30000, image: "assets/images_menu/Cheese Beef Risol Mayo.png" },
       { name: "Mix Platter", price: 40000, image: "assets/images_menu/Mix Platter.png" },
       { name: "Tahu Bakso", price: 35000, image: "assets/images_menu/Tahu Bakso.png" },
-      { name: "Mix Gorengan", price: 40000, image: "assets/images_menu/Mix Gorengan.png" },
+      { name: "Mix Gorengan", price: 40000, image: "assets/images_menu/MIX GORENGAN.jpeg" },
       { name: "Ote Ote Udang", price: 30000, image: "assets/images_menu/Ote Ote Udang.png" },
       { name: "Onion Ring", price: 30000, image: "assets/images_menu/Onion Ring.png" },
       { name: "Chicken Springroll", price: 30000, image: "assets/images_menu/Chicken Springroll.png" },
-      { name: "Spicy Chicken Wings", price: 35000, image: "assets/images_menu/Spicy Chicken Wings.png" },
+      { name: "Spicy Chicken Wings", price: 35000, image: "assets/images_menu/SPICY CHICKEN WINGS.jpeg" },
       { name: "French Fries", price: 25000, image: "assets/images_menu/French Fries.png" },
-      { name: "Tahu Cabe Garam", price: 35000, image: "assets/images_menu/Tahu Cabe Garam.png" },
+      { name: "Tahu Cabe Garam", price: 35000, image: "assets/images_menu/tahu cabe garam.jpeg" },
       { name: "Samosa Chicken Curry", price: 35000, image: "assets/images_menu/Samosa Chicken Curry.png" }
     ]
   },
@@ -78,9 +78,9 @@ const menuData = [
     items: [
       { name: "Pisang Goreng Madu Wijen", price: 30000, image: "assets/images_menu/Pisang Goreng Madu Wijen.png" },
       { name: "Pisang Goreng Keju Krezz", price: 30000, image: "assets/images_menu/Pisang Goreng Keju Krezz.png" },
-      { name: "Banana Split w/ Ice Cream", price: 35000, image: "assets/images_menu/Banana Split w Ice Cream.png" },
-      { name: "Pudding Caramel", price: 25000, image: "assets/images_menu/Pudding Caramel.png" },
-      { name: "Brownies Burnt Cheese Cake", price: 45000, image: "assets/images_menu/Brownies Burnt Cheese Cake.png" },
+      { name: "Banana Split w/ Ice Cream", price: 35000, image: "assets/images_menu/banana split es krim.jpeg" },
+      { name: "Pudding Caramel", price: 25000, image: "assets/images_menu/PUDING CARAMEL.jpeg" },
+      { name: "Brownies Burnt Cheese Cake", price: 45000, image: "assets/images_menu/brownies burnt.jpeg" },
       { name: "Fruits Platter", price: 25000, image: "assets/images_menu/Fruits Platter.png" }
     ]
   },
@@ -164,7 +164,7 @@ const menuData = [
       { name: "Strudel Bollen", price: 70000, image: "assets/images_menu/Strudel Bollen.png" },
       { name: "Roll Cake", price: 70000, image: "assets/images_menu/Roll Cake.png" },
       { name: "BooLynn Beef Triple Cheese", price: 52000, image: "assets/images_menu/BooLynn Beef Triple Cheese.png" },
-      { name: "BooLynn Banana Choco", price: 90000, image: "assets/images_menu/BooLynn Banana Choco.png" },
+      { name: "BooLynn Banana Choco", price: 90000, image: "assets/images_menu/BOOLYNN CHOCOCHEESE.jpeg" },
       { name: "Rollyn Floss Abon", price: 130000, image: "assets/images_menu/Rollyn Floss Abon.png" },
       { name: "LYNN De Napoleon", price: 150000, image: "assets/images_menu/LYNN De Napoleon.png" }
     ]
