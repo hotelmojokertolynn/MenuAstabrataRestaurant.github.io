@@ -120,7 +120,7 @@ const menuData = [
     category: "MOCKTAIL",
     items: [
       { name: "Sparkling Lychee Butterfly Pea Tea", price: 25000, image: "assets/images_menu/Sparkling Lychee Butterfly Pea Tea.png" },
-      { name: "Watermelon Lemonade", price: 25000, image: "assets/images_menu/Watermelon Lemonade.png" },
+      { name: "Watermelon Lemonade", price: 25000, image: "assets/images_menu/watermelon lemonade.jpeg" },
       { name: "Summer Strawberry Ly", price: 27000, image: "assets/images_menu/Summer Strawberry Ly.png" }
     ]
   },
