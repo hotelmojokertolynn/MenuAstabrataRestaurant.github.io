@@ -127,6 +127,22 @@ input,.form-control,select{
   cursor:pointer;
 }
 
+/* DARK MODE TOGGLE BUTTON */
+.mode-toggle{
+  position:fixed;
+  top:14px;
+  right:14px;
+  z-index:10000;
+  border:none;
+  background:#fff;
+  color:#000;
+  padding:8px 12px;
+  border-radius:20px;
+  cursor:pointer;
+  font-size:14px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.25);
+}
+
 /* MOBILE */
 @media(max-width:480px){
   .hero-content h1{font-size:22px;}
@@ -146,6 +162,9 @@ input,.form-control,select{
 </head>
 
 <body>
+
+<!-- TOGGLE DARK MODE -->
+<button class="mode-toggle" id="modeToggle">🌙</button>
 
 <header class="hero-header">
   <div class="hero-content">
@@ -236,19 +255,41 @@ input,.form-control,select{
 
 <!-- IMAGE PREVIEW SCRIPT -->
 <script>
-  const modal = document.getElementById("imageModal");
-  const modalImg = document.getElementById("modalImg");
-  const closeBtn = document.getElementById("closeModal");
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.getElementById("closeModal");
 
-  document.addEventListener("click", function(e){
-    if(e.target.closest(".menu-card img")){
-      modal.style.display = "flex";
-      modalImg.src = e.target.src;
-    }
-  });
+document.addEventListener("click", function(e){
+  if(e.target.closest(".menu-card img")){
+    modal.style.display = "flex";
+    modalImg.src = e.target.src;
+  }
+});
 
-  closeBtn.onclick = () => modal.style.display = "none";
-  modal.onclick = () => modal.style.display = "none";
+closeBtn.onclick = () => modal.style.display = "none";
+modal.onclick = () => modal.style.display = "none";
+</script>
+
+<!-- DARK MODE SCRIPT -->
+<script>
+const toggleBtn = document.getElementById("modeToggle");
+
+if(localStorage.getItem("theme") === "dark"){
+  document.body.classList.add("dark-mode");
+  toggleBtn.textContent = "☀️";
+}
+
+toggleBtn.onclick = () => {
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    localStorage.setItem("theme","dark");
+    toggleBtn.textContent = "☀️";
+  }else{
+    localStorage.setItem("theme","light");
+    toggleBtn.textContent = "🌙";
+  }
+};
 </script>
 
 </body>

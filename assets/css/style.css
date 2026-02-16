@@ -396,3 +396,76 @@ a[x-apple-data-detectors]{
   color:inherit !important;
   text-decoration:none !important;
 }
+
+/* ===================================================== */
+/* ==================== DARK MODE ====================== */
+/* ===================================================== */
+
+body.dark-mode{
+  color:#eee;
+}
+
+body.dark-mode::before{
+  background:rgba(0,0,0,0.85);
+}
+
+body.dark-mode .top-header{
+  background:linear-gradient(90deg,#111,#000);
+}
+
+body.dark-mode .header-info{
+  background:#111;
+  color:#eee;
+}
+
+body.dark-mode .welcome-banner .overlay{
+  background:rgba(0,0,0,0.65);
+}
+
+body.dark-mode .menu-header h1,
+body.dark-mode .menu-header p,
+body.dark-mode .price-info p,
+body.dark-mode .category h2{
+  color:#eee;
+}
+
+body.dark-mode .menu-card{
+  background:#1c1c1c;
+  color:#eee;
+  box-shadow:0 6px 14px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .menu-info b{
+  color:#d4af37;
+}
+
+body.dark-mode .add-btn{
+  background:transparent;
+  color:#d4af37;
+  border-color:#d4af37;
+}
+
+body.dark-mode .add-btn:hover{
+  background:#d4af37;
+  color:#000;
+}
+
+body.dark-mode .qty-control{
+  background:#222;
+}
+
+body.dark-mode .menu-filter button{
+  background:#222;
+  color:#eee;
+}
+
+body.dark-mode .menu-filter button.active{
+  background:#d4af37;
+  color:#000;
+}
+
+body.dark-mode .cart{
+  background:#111;
+  color:#fff;
+  border-top:1px solid #333;
+}
