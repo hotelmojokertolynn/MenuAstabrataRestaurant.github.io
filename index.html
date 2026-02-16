@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Mencegah iPhone auto-detect nomor telepon -->
 <meta name="format-detection" content="telephone=no">
 
 <title>Order Menu - Astabrata Restaurant</title>
@@ -12,7 +11,6 @@
 <link rel="stylesheet" href="assets/css/style.css">
 
 <style>
-/* LINK TELEPON AGAR TIDAK BIRU DI iOS */
 .contact-link{
   color:inherit !important;
   text-decoration:none !important;
@@ -24,87 +22,74 @@ a[x-apple-data-detectors]{
   text-decoration:none !important;
 }
 
-/* INPUT */
-input,.form-control,select{
-  max-width:100%;
+input,.form-control,select,textarea{
   width:100%;
   box-sizing:border-box;
   padding:10px;
+  font-size:14px;
+}
+
+textarea{
+  resize:vertical;
+  min-height:80px;
 }
 
 .field{
   margin-bottom:15px;
 }
 
-/* HERO HEADER */
+/* HERO */
 .hero-header{
   position:relative;
   padding:40px 20px 50px;
   display:flex;
-  align-items:center;
   justify-content:center;
   text-align:center;
   color:#fff;
   background:
-    linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
     url("assets/images/banner.jpg") center/cover no-repeat;
-  border-bottom-left-radius:30px;
-  border-bottom-right-radius:30px;
+  border-radius:0 0 30px 30px;
 }
 
-.hero-content{
-  max-width:750px;
-}
+.hero-content{max-width:750px}
 
 .hero-content h1{
-  font-size:28px;
-  font-weight:bold;
-  letter-spacing:3px;
-  margin-bottom:10px;
+  font-size:26px;
+  letter-spacing:2px;
 }
 
 .hero-content h2{
-  font-size:16px;
-  letter-spacing:2px;
-  margin-bottom:6px;
-  opacity:0.9;
+  font-size:14px;
+  opacity:.9;
 }
 
 .hero-content p{
   font-size:13px;
-  opacity:0.85;
-  margin-bottom:12px;
+  opacity:.85;
 }
 
-/* HOTEL INFO */
 .hotel-info{
   font-size:12px;
-  line-height:1.6;
-  opacity:0.9;
-  margin-top:25px;
+  margin-top:20px;
 }
 
-/* PRICE INFO */
+/* PRICE */
 .price-info{
   text-align:center;
-  margin:25px auto 35px;
-  padding:0 15px;
-  max-width:900px;
+  margin:25px auto;
 }
 
 .price-info p{
-  font-size:16px;
-  line-height:1.6;
-  padding-bottom:12px;
   border-bottom:2px solid #000;
-  margin:0;
+  padding-bottom:10px;
 }
 
-/* IMAGE MODAL */
+/* MODAL */
 .image-modal{
   position:fixed;
   inset:0;
-  background:rgba(0,0,0,0.85);
+  background:rgba(0,0,0,.85);
   display:none;
   justify-content:center;
   align-items:center;
@@ -115,7 +100,6 @@ input,.form-control,select{
   max-width:90%;
   max-height:90%;
   border-radius:12px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.6);
 }
 
 .close-modal{
@@ -127,7 +111,7 @@ input,.form-control,select{
   cursor:pointer;
 }
 
-/* DARK MODE TOGGLE BUTTON */
+/* DARK MODE */
 .mode-toggle{
   position:fixed;
   top:14px;
@@ -135,46 +119,39 @@ input,.form-control,select{
   z-index:10000;
   border:none;
   background:#fff;
-  color:#000;
   padding:8px 12px;
   border-radius:20px;
   cursor:pointer;
-  font-size:14px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.25);
 }
 
-/* MOBILE */
+body.dark-mode{
+  background:#111;
+  color:#eee;
+}
+
+body.dark-mode .price-info p{
+  border-color:#eee;
+}
+
 @media(max-width:480px){
   .hero-content h1{font-size:22px;}
-  .hero-content h2{font-size:14px;}
-
-  .hotel-info{
-    font-size:11px;
-    margin-top:20px;
-  }
-
-  .price-info p{
-    font-size:13px;
-    border-bottom:1.5px solid #000;
-  }
+  .hero-content h2{font-size:13px;}
 }
 </style>
 </head>
 
 <body>
 
-<!-- TOGGLE DARK MODE -->
 <button class="mode-toggle" id="modeToggle">🌙</button>
 
 <header class="hero-header">
   <div class="hero-content">
     <h1><strong>Lynn Hotel Mojokerto</strong></h1>
-    <h1><strong>Welcome to the Astabrata Restaurant</strong></h1>
-    <h2>Selamat datang! Dive into deliciousness at Astabrata Restaurant</h2>
-    <h2>Restaurant In-Room/Dining Order</h2>
+    <h1><strong>Astabrata Restaurant</strong></h1>
+    <h2>Restaurant In-Room / Dining Order</h2>
 
     <div class="hotel-info">
-      <p>Jl. Empunala No.87 Mojokerto, Jawa Timur 61314 - Indonesia</p>
+      <p>Jl. Empunala No.87 Mojokerto, Jawa Timur</p>
       <p>
         Phone :
         <a href="tel:+623215285000" class="contact-link">(0321) 5285-000</a>
@@ -191,7 +168,7 @@ input,.form-control,select{
 
   <div class="field">
     <label>Nama Pemesan *</label>
-    <input type="text" id="nama" placeholder="Masukkan nama pemesan">
+    <input type="text" id="nama">
   </div>
 
   <div class="field">
@@ -215,7 +192,14 @@ input,.form-control,select{
 
   <div class="field">
     <label>Nomor Kamar</label>
-    <input type="text" id="nomor_kamar" placeholder="Contoh: 305 (Opsional)">
+    <input type="text" id="nomor_kamar" placeholder="Opsional">
+  </div>
+
+  <!-- CATATAN UNTUK DAPUR -->
+  <div class="field">
+    <label>Catatan untuk Dapur</label>
+    <textarea id="catatan"
+      placeholder="Contoh: tidak pedas, tanpa bawang, alergi seafood, dll"></textarea>
   </div>
 
   <div class="menu-header">
@@ -231,7 +215,7 @@ input,.form-control,select{
   </div>
 
   <div class="price-info">
-    <p>All Price in thousand Rupiah. Inclusive of Tax & Service Charge 21%</p>
+    <p>All Price in thousand Rupiah. Inclusive Tax & Service 21%</p>
   </div>
 
   <div id="menu"></div>
@@ -244,51 +228,39 @@ input,.form-control,select{
   </div>
 </div>
 
-<!-- IMAGE MODAL -->
 <div class="image-modal" id="imageModal">
   <span class="close-modal" id="closeModal">&times;</span>
-  <img id="modalImg" src="" alt="Preview">
+  <img id="modalImg">
 </div>
 
 <script src="assets/js/menu.js"></script>
 <script src="assets/js/app.js"></script>
 
-<!-- IMAGE PREVIEW SCRIPT -->
 <script>
-const modal = document.getElementById("imageModal");
-const modalImg = document.getElementById("modalImg");
-const closeBtn = document.getElementById("closeModal");
-
-document.addEventListener("click", function(e){
+const modal=document.getElementById("imageModal");
+const modalImg=document.getElementById("modalImg");
+document.addEventListener("click",e=>{
   if(e.target.closest(".menu-card img")){
-    modal.style.display = "flex";
-    modalImg.src = e.target.src;
+    modal.style.display="flex";
+    modalImg.src=e.target.src;
   }
 });
-
-closeBtn.onclick = () => modal.style.display = "none";
-modal.onclick = () => modal.style.display = "none";
+modal.onclick=()=>modal.style.display="none";
 </script>
 
-<!-- DARK MODE SCRIPT -->
 <script>
-const toggleBtn = document.getElementById("modeToggle");
-
-if(localStorage.getItem("theme") === "dark"){
+const toggleBtn=document.getElementById("modeToggle");
+if(localStorage.getItem("theme")==="dark"){
   document.body.classList.add("dark-mode");
-  toggleBtn.textContent = "☀️";
+  toggleBtn.textContent="☀️";
 }
-
-toggleBtn.onclick = () => {
+toggleBtn.onclick=()=>{
   document.body.classList.toggle("dark-mode");
-
-  if(document.body.classList.contains("dark-mode")){
-    localStorage.setItem("theme","dark");
-    toggleBtn.textContent = "☀️";
-  }else{
-    localStorage.setItem("theme","light");
-    toggleBtn.textContent = "🌙";
-  }
+  localStorage.setItem("theme",
+    document.body.classList.contains("dark-mode")?"dark":"light"
+  );
+  toggleBtn.textContent=
+    document.body.classList.contains("dark-mode")?"☀️":"🌙";
 };
 </script>
 
